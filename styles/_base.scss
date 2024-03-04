@@ -1,5 +1,28 @@
 // Base styles
 
+.gallery {
+	margin: 5% 0;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 15px;
+}
+
+.galleryItem {
+	list-style-type: none;
+	opacity: 1;
+}
+
+.galleryItem:hover img {
+	opacity: .6;
+}
+
+
+
+
+
+
+
+
 *,
 *::before,
 *::after {
