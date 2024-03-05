@@ -30,12 +30,12 @@ export default function Albums() {
 
     return (
         <Layout>
-            <ul className="gallery">
-                {data.albums.nodes.map((album) => {
-                    <li className="galleryItem" key={album.databaseId}>
-                        <AlbumCard album={album} />
-                    </li>
-                })}
+            <ul className="gallery"> 
+              {data.albums.nodes.map((album) => (
+                <li className="galleryItem" key={album.databaseId}>
+                  <AlbumCard album={album} />
+                </li>
+              ))}
             </ul>
         </Layout>
     );

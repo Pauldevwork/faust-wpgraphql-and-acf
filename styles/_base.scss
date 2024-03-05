@@ -5,6 +5,7 @@
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 15px;
+	justify-content: space-between;
 }
 
 .galleryItem {
@@ -16,10 +17,47 @@
 	opacity: .6;
 }
 
+.backButton {
+	text-align: right;
+	margin: 2% 5%;
+	font-weight: bold;
+}
 
+.backButton:hover {
+	text-decoration: underline;
+}
 
+.title {
+	text-align: center;
+}
 
+.details {
+	text-align: center;
+}
 
+.cover {
+	display: block;
+}
+
+.trackList {
+	text-align: center;
+	text-decoration: none;
+	list-style-type: none;
+	padding-inline-start: 0;
+}
+
+.listItem a {
+	text-decoration: none;
+	color: black;
+}
+
+.listItem a:hover {
+	font-weight: bold;
+}
+
+.lyrics {
+	white-space: pre-wrap;
+}
 
 
 
