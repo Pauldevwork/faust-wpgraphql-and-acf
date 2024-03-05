@@ -21,10 +21,12 @@
 	text-align: right;
 	margin: 2% 5%;
 	font-weight: bold;
+	cursor: pointer;
 }
 
 .backButton:hover {
 	text-decoration: underline;
+	cursor: pointer;
 }
 
 .title {
@@ -56,7 +58,8 @@
 }
 
 .lyrics {
-	white-space: pre-wrap;
+	justify-content: centre;
+	text-align: center;
 }
 
 
@@ -72,6 +75,7 @@ body {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 	font-weight: var(--wpe--font-weight--medium);
 	font-size: 1rem;
+	text-align: center;
 }
 
 code {

@@ -1,6 +1,7 @@
 import { gql, useQuery } from "@apollo/client";
 import Layout from "../../components/Layout";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const GET_SONG_DETAILS = gql`
 query getSongDetails($songSlug: ID!) {
@@ -39,11 +40,11 @@ export default function Song() {
             </Link>
             <h1 className="title">{songData.songTitle}</h1>
             <p className="details">Song Link: {songData.link}</p>
-            <P className="details">
+            <p>
                 Genre:
                 {songData.genre.nodes.map((genre) => genre.name)
                 .join(", ")}
-            </P>
+            </p>
             <h3 className="details">Lyrics</h3>
             <div className="details lyrics">{songData.lyrics}</div>
         </Layout>
